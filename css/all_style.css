@@ -1,0 +1,252 @@
+/* page */
+html {
+    scroll-behavior: smooth;
+  }
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+  }
+  body{
+      background-image: url('../images/About\ us.png');
+      background-size: 100vh 100%;
+      font-family: sans-serif;}
+      @font-face {
+        font-family: Poppins-Regular;
+        src: url(../fonts/poppins/Poppins-Regular.ttf)
+    }
+    
+    @font-face {
+        font-family: Poppins-Medium;
+        src: url(../fonts/poppins/Poppins-Medium.ttf)
+    }
+    
+    @font-face {
+        font-family: Poppins-Bold;
+        src: url(../fonts/poppins/Poppins-Bold.ttf)
+    }
+    
+    @font-face {
+        font-family: Poppins-SemiBold;
+        src: url(../fonts/poppins/Poppins-SemiBold.ttf)
+    }
+    
+    @font-face {
+        font-family: Montserrat-Bold;
+        src: url(../fonts/montserrat/Montserrat-Bold.ttf)
+    }
+    
+    @font-face {
+        font-family: Montserrat-SemiBold;
+        src: url(../fonts/montserrat/Montserrat-SemiBold.ttf)
+    }
+    
+    @font-face {
+        font-family: Montserrat-Regular;
+        src: url(../fonts/montserrat/Montserrat-Regular.ttf)
+    }
+/* page */
+
+
+/* scroll up btn */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background:none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  #myBtn i{
+    text-shadow: 2px 2px #2ab8b8;
+  }
+  
+  #myBtn:hover {
+    font-size: 35px;
+  }
+/* scroll up btn */
+
+
+/* nav */
+nav {
+      padding:0px 20px;
+    }
+  nav ul {
+      list-style-type: none;
+    }
+   nav  a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: .2s;
+    }
+    nav a:hover , .activee{
+  background-color: white;
+  color: #1a9495;
+  border-radius: 50px;
+  padding: 10px;
+  text-decoration: none;
+    }
+  .about:hover{
+    font-size: 20px;
+  }
+    .menu li {
+      font-size: 16px;
+      padding: 15px 5px;
+      white-space: nowrap;
+    }
+  
+    .toggle a {
+      font-size: 20px;
+    }
+    .button.secondary {
+      border-bottom: 1px #444 solid;
+    }
+    
+    /* Mobile menu */
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .toggle {
+      order: 1;
+    }
+    .item.button {
+      order: 2;
+    }
+    .item {
+      width: 100%;
+      text-align: center;
+      order: 3;
+      display: none;
+    }
+    .item.active {
+      display: block;
+    }
+    
+    /* Navbar Toggle */
+    .toggle {
+      cursor:pointer;
+    }
+    .bars {
+      background: white;
+      display: inline-block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 20px;
+    }
+    .bars:before,
+    .bars:after {
+      background: white;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+    .bars:before {
+      top: 5px;
+    }
+    .bars:after {
+      top: -5px;
+    }
+    .logo img{
+      width: 150px;
+    }
+    @media (max-width:700px){
+      .logo img{
+          width: 100px;
+      }
+    }
+    /* Tablet menu */
+    @media all and (min-width: 468px) {
+      .menu {
+          justify-content: center;
+      }
+    
+      .logo {
+          flex: 1;
+      }
+    
+      .item.button {
+          width: auto;
+          order: 1;
+          display: block;
+      }
+      .toggle {
+          order: 2;
+      }
+     
+     
+    }
+    
+    /* Desktop menu */
+    @media all and (min-width: 768px) {
+      .item {
+          display: block;
+          width: auto;
+      }
+      .toggle {
+          display: none;
+      }
+      .logo {
+          order: 0;
+          
+      }
+      .item {
+          order: 1;
+      }
+      .button {
+          order: 2;
+      }
+      .menu li {
+          padding: 15px 20px 0px;
+      }
+      .menu li.button {
+          padding-right: 0;
+      }
+    }
+/* nav */
+
+/* footer */
+footer { width:100%; 
+    padding:30px 0px 25px 0px ;
+   }
+ footer p { font-size:14px; 
+   color:white;
+   padding-bottom:0px;
+   margin-bottom:8px;}
+ 
+ .social_footer_ul { 
+   display:table;
+   margin:15px auto 0 auto;
+   list-style-type:none;  }
+ .social_footer_ul li {
+    padding-left:20px;
+     padding-top:10px; 
+     float:left; }
+ .social_footer_ul li a { 
+   color:white; 
+   border:1px solid #CCC; 
+   padding:8px;
+   border-radius:50%;}
+ .social_footer_ul li i {  
+   width:20px; height:20px;
+    text-align:center;}
+ footer a{
+   color: white;
+ }
+ footer a:hover{
+   color: #CCC;
+ }
+/* footer */
